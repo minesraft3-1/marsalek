@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARSALEK // Sign Up</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Syne:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/api.js" async="" defer=""></script>
+    <style>
+        .turnstile-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem 0;
+        }
+
+        .cf-turnstile {
+            margin: 0 auto;
+        }
+
+        .login-link {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .login-link a {
+            color: var(--accent-cyber);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="main">
+            <div id="card">
+                <h1>MARSALEK</h1>
+                
+                    
+                
+                <form action="/signup" method="post" autocomplete="off">
+                    <div>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" autocomplete="off" required="" minlength="3" maxlength="32">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required="" minlength="8">
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required="" minlength="8">
+                    </div>
+                    <div class="turnstile-wrapper">
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACIX49QEuUGqIFqY" data-theme="dark"></div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <div class="login-link">
+                    Already have an account? <a href="login.html">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; gap: 0.25rem; margin-top: 2rem; font-size: 0.8rem; color: #5a5a65;">
+            <span>Contact</span>
+            <a href="https://t.me/MetaMaskenMann">@MetaMaskenMann</a>
+            <span>on Telegram</span>
+        </div>
+    </div>
+
+</body></html>
